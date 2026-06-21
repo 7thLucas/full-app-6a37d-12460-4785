@@ -1,0 +1,81 @@
+<style>
+.mode-landscape .sl-wrapper { padding: 2.5rem 3.5rem; }
+.mode-portrait .sl-wrapper { padding: 2rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-wrapper flex flex-col h-full gap-4">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between flex-wrap gap-2">
+      <div>
+        <p class="text-xs font-bold text-violet-600 uppercase tracking-widest mb-1">North Star</p>
+        <h2 class="text-3xl font-black text-slate-900">Weekly Verified Operations</h2>
+      </div>
+      <span class="inline-flex items-center bg-amber-100 text-amber-700 text-xs font-bold rounded-full px-3 py-1.5 tracking-wide flex-shrink-0">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Operation Definition -->
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4">
+      <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Verified Operation</p>
+      <p class="text-slate-800 text-sm font-semibold leading-relaxed">
+        <span class="text-violet-700">Media project exported</span> — a creator finishes editing an image or video and exports the result. Clicks, logins, and in-progress edits do not count.
+      </p>
+    </div>
+
+    <!-- WVO + Value Grid -->
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <!-- WVO Formula -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 flex flex-col gap-3">
+        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">WVO Formula</p>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="bg-amber-100 text-amber-700 text-xs font-semibold rounded-full px-2.5 py-0.5 flex-shrink-0">Assumption — adjust this</span>
+            <span class="text-slate-600 text-xs">500 active creators / week</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="bg-amber-100 text-amber-700 text-xs font-semibold rounded-full px-2.5 py-0.5 flex-shrink-0">Assumption — adjust this</span>
+            <span class="text-slate-600 text-xs">4 exports per creator / week</span>
+          </div>
+        </div>
+        <div class="border-t border-slate-100 pt-3 mt-auto">
+          <p class="text-xs text-slate-400 mb-1">500 creators × 4 exports =</p>
+          <p class="text-4xl font-black text-violet-600 leading-none">2,000</p>
+          <p class="text-xs font-semibold text-slate-500 mt-0.5">verified operations / week</p>
+        </div>
+      </div>
+
+      <!-- Value Projection -->
+      <div class="flex flex-col gap-3">
+
+        <!-- Per-operation value -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 flex flex-col gap-2 flex-1">
+          <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Value per Operation</p>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="bg-amber-100 text-amber-700 text-xs font-semibold rounded-full px-2.5 py-0.5 flex-shrink-0">Assumption — adjust this</span>
+            <span class="text-slate-600 text-xs">20 min saved vs. switching tools</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="bg-amber-100 text-amber-700 text-xs font-semibold rounded-full px-2.5 py-0.5 flex-shrink-0">Assumption — adjust this</span>
+            <span class="text-slate-600 text-xs">$12 / hr creator time value</span>
+          </div>
+          <p class="text-xs text-slate-500 mt-auto">(20 ÷ 60) × $12 = <span class="font-bold text-slate-800">$4.00 per export</span></p>
+        </div>
+
+        <!-- Total value -->
+        <div class="bg-violet-600 rounded-2xl p-4 flex flex-col gap-1">
+          <p class="text-violet-200 text-xs font-semibold uppercase tracking-widest">Projected Total Value</p>
+          <p class="text-2xl font-black text-white leading-none">$8,000 / week</p>
+          <p class="text-violet-200 text-xs">2,000 ops × $4.00</p>
+          <div class="border-t border-violet-500 my-2"></div>
+          <p class="text-xl font-black text-white leading-none">$416,000 / year</p>
+          <p class="text-violet-200 text-xs">$8,000 × 52 weeks</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
