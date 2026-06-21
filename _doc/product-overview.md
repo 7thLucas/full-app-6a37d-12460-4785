@@ -1,0 +1,1 @@
+I want to build an app use in editing of image and videos in which nations can use and be satisfied with it
