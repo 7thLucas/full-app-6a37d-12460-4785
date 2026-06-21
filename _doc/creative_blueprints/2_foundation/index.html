@@ -1,0 +1,74 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content {
+  width: 58%;
+  padding: 3rem 3rem 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.mode-landscape .sl-visual {
+  width: 42%;
+  position: relative;
+  overflow: hidden;
+}
+.mode-portrait .sl-content {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+}
+.mode-portrait .sl-visual {
+  height: 35%;
+  position: relative;
+  overflow: hidden;
+}
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-content">
+      <div>
+        <p class="text-xs font-bold text-violet-600 uppercase tracking-widest mb-1">Foundation</p>
+        <h2 class="text-3xl font-black text-slate-900">The Case for a Better Editor</h2>
+      </div>
+
+      <!-- Problem -->
+      <div class="bg-rose-50 border border-rose-100 rounded-2xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
+          <span class="text-xs font-bold text-rose-600 uppercase tracking-widest">The Problem</span>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Creators worldwide juggle separate, region-specific tools — one app for images, another for video. Fragmented workflows, language barriers, and platforms not built for a global audience leave millions underserved and their best work unrealised.
+        </p>
+      </div>
+
+      <!-- Solution -->
+      <div class="bg-violet-50 border border-violet-100 rounded-2xl p-5">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-2 h-2 rounded-full bg-violet-600 flex-shrink-0"></span>
+          <span class="text-xs font-bold text-violet-600 uppercase tracking-widest">The Solution</span>
+        </div>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          One unified editing platform — images and video together — designed global-first. Any creator, in any nation, can produce professional-quality media without friction or tool-switching.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=contrast%20split%20scene%3A%20left%20frustrated%20person%20with%20many%20fragmented%20apps%20on%20screen%2C%20right%20calm%20confident%20creator%20with%20clean%20unified%20editing%20interface%2C%20minimal%20modern%20lighting"
+        alt="Problem to solution"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
