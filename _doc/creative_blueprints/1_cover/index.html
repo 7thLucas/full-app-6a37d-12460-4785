@@ -1,0 +1,64 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left {
+  width: 55%;
+  padding: 3.5rem 3rem 3.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mode-landscape .sl-right {
+  width: 45%;
+  position: relative;
+  overflow: hidden;
+}
+.mode-portrait .sl-left {
+  padding: 2.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.mode-portrait .sl-right {
+  height: 40%;
+  position: relative;
+  overflow: hidden;
+}
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Text Content -->
+    <div class="sl-left">
+      <div class="flex flex-col gap-6">
+        <span class="inline-flex w-fit items-center bg-violet-100 text-violet-700 text-xs font-bold tracking-widest uppercase rounded-full px-4 py-1.5">
+          Image &amp; Video Editing · Global
+        </span>
+        <div>
+          <h1 class="text-5xl font-black text-slate-900 leading-none">
+            Create Without
+          </h1>
+          <h1 class="text-5xl font-black text-violet-600 leading-none mt-2">
+            Borders.
+          </h1>
+        </div>
+        <p class="text-lg text-slate-500 leading-relaxed max-w-xs">
+          One unified platform for image and video editing — built for creators of every nation, powered by a shared desire to create freely.
+        </p>
+      </div>
+      <data-attribution />
+    </div>
+
+    <!-- Right: Hero Image -->
+    <div class="sl-right">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=diverse%20global%20content%20creators%20editing%20photos%20and%20videos%20together%2C%20vibrant%20modern%20creative%20studio%2C%20colorful%20screens%2C%20warm%20inclusive%20professional%20atmosphere"
+        alt="Global creators editing media"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
